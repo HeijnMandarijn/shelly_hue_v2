@@ -10,7 +10,7 @@ Are your parents, kids or spouse messing up the joy of controlling Hue lights th
 The project was born out of the following challenges:
 
 1. **Huge Hue API update**: Philips Hue released a completely new Hue V2 API, which includes new feature such as dynamic scenes, gradient entertainment technology, and proactive state change events on the local network. 
-2. **Good artists copy, great artists steal**: I didn't want to put any effort into understanding the APIs and writing my own scripts, but all I could find was public repos using the Hue V1 API and they were missing features that I was looking for which turned out to be exclusive to Hue V2 API. So after a hard-headed month of failed Google searches and procrastinating, I caved and started reading API documentation. I use Hue V1 API scripts that I encountered during my tussle with Google - made a few tweaks here and there - and voilá! 
+2. **Good artists copy, great artists steal**: I didn't want to put any effort into understanding the APIs and writing my own scripts, but all I could find was public repos using the Hue V1 API and they were missing features that I was looking for which turned out to be exclusive to Hue V2 API. So after a hard-headed month of failed Google searches and procrastinating, I caved and started reading API documentation. I use Hue V1 API scripts that I encountered during my tussle with Google - made a few tweaks here and there - and voilá! (Needless to say, I took the liberty of re-using some descriptions from repos like https://github.com/laurentbroering/shelly_hue/tree/main)
 3. **Hue Ecosystem Limitations**: Automations within the Hue system are restricted to its ecosystem.
 4. **Cost and Maintenance**: Replacing traditional switches with Hue switches is expensive, redundant, and requires frequent battery replacements.
 5. **Relay Battery Life**: Hue relay batteries need replacement every couple of years. Shelly relays are powered with a Neutral wire.
@@ -33,7 +33,7 @@ The project was born out of the following challenges:
    - https://shelly-api-docs.shelly.cloud/gen2/ComponentsAndServices/Switch
 5. These scripts are based on the Shelly API documentation for *Gen2+* devices. For specifics about what this entails, visit: https://shelly-api-docs.shelly.cloud/gen2/0.14/
 6. Although it is possible to set specific colors for lights directly, I found that it is much easier and faster to activate Hue Scenes. While my scripts activate two scenes based on double press actions or triple press actions, it is possible to loop through a longer list of scenes if you wish to do so.
-7. By default, the Hue Bridge IP is assigned dynamically, which means that it gets a new IP every time you reconnect it to power or your network. Either change your router settings to give it a static IP or use the helper functions in my scripts to handle *dynamic IP changes*.\
+7. By default, the Hue Bridge IP is assigned dynamically, which means that it gets a new IP every time you reconnect it to power or your network. Either change your router settings to give it a static IP or use the helper functions in my scripts to handle *dynamic IP changes*.
 8. SSL certificate validation is not needed in a typical consumer home, unless your anarchic teen decides to pick up cyber security studies and wants to mess with you by staging a man-in-the-middle attack on your home network.
 
 ---
