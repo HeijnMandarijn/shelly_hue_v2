@@ -88,6 +88,7 @@ The project was born out of the following challenges:
    | `/clip/v2/resource/room/<rid>`           | Get details about a specific room.          |
    | `/clip/v2/resource/zone`                 | Get information about all zones.            |
    | `/clip/v2/resource/scene`                | Get information about all scenes.           |
+   | `/clip/v2/resource/smart_scene`          | Get information about all dynamic scenes.   |
    | `/clip/v2/resource/grouped_light/<rid>`  | Get details about specific grouped lights.  |
 
 ---
