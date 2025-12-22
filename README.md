@@ -58,7 +58,6 @@ The project was born out of the following challenges:
 
 3. **Explore Your System**:
    - Retrieve information about lamps, groups, scenes, and sensors using commands like these:
-
    #### Example API Commands:
    - Retrieve all rooms:
      ```
@@ -66,14 +65,12 @@ The project was born out of the following challenges:
      Headers: `{hue-application-key (Key): <your-hue-app-key> (Value)}`
      Method: `GET`
      ```
-     
   - Retrieve lights from the list of devices (look up 'rtype: light' and use the corresponding 'rid' to control a light source):
      ```
      URL: `https://<bridge ip address>/clip/v2/resource/device`
      Headers: `{hue-application-key (Key): <your-hue-app-key> (Value)}`
      Method: `GET`
      ```
-
    - Turn off lamp 4:
      ```
      URL: `https://<bridge ip address>/clip/v2/resource/light/<rid-from-light>`
